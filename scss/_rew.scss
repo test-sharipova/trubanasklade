@@ -1,0 +1,104 @@
+.rew {
+    padding: 60px 0 40px;
+    &__wrap {
+        background-color: #fff;
+        padding: 60px 48px 47px;
+        border-radius: 5px;
+    }
+    &__slider {
+        margin-top: 32px;
+        .slick {
+            &-slide {
+                margin: 0 32px;
+              }
+              
+              &-list {
+                margin-left: -32px;
+                margin-right: -32px;
+              }
+        }
+        .slick-arrow {
+            font-size: 1px;
+            color: transparent;
+            border: none;
+            border-radius: 100%;
+            width: 48px;
+            height: 48px;
+            background-color: #e84039;
+            cursor: pointer;
+            position: absolute;
+            top: -60px;
+            right: 0;
+            z-index: 2;
+            transition: background-color .3s;
+            &::after {
+                content: '';
+                mask: url(../img/icons/arrow-right.svg) no-repeat center/contain;
+                display: block;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 11px;
+                height: 20px;
+                transition: background-color .3s;
+            }
+            &:hover {
+                opacity: .75;
+            }
+            
+        }
+        .slick-prev {
+            right: 60px;
+            &::after {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+        }
+        .slick-disabled {
+            background-color: transparent;
+            border: 1px solid #999faa;
+            &::after {
+                background-color: #999faa;
+            }
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #999faa;
+                &::after {
+                    background-color: #999faa;
+                }
+            }
+        }
+    }
+    &__link {
+        display: block;
+        margin-bottom: 20px;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border: 4px solid transparent;
+            border-radius: 10px;
+            transition: border-color .3s;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 144%;
+        transition: color .3s;
+    }
+    &__item {
+        &:hover {
+            .rew__text {
+                color: #428BCA;
+            }
+            .rew__link {
+                img {
+                    border-color: #E84039;
+                  
+                }
+            }
+        }
+    }
+}

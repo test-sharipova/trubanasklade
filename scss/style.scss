@@ -183,6 +183,30 @@ body {
         background-color: #02afe7;
     }
 }
+.btn_transparent {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #428bca;
+    border: 2px dashed #428bca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px;
+    height: 48px;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity .3s;
+    border-radius: 6px;
+    &:hover {
+        opacity: .75;
+    }
+}
+.link {
+    color: #428bca;
+    text-decoration: none;
+}
 
 
 
@@ -196,3 +220,6 @@ body {
 @import '_delivery.scss';
 @import '_about.scss';
 @import '_video.scss';
+@import '_rew.scss';
+@import '_cases.scss';
+@import '_contacts.scss';

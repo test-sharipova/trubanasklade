@@ -12,6 +12,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
+        margin-top: 13px;
         .btn_main {
             grid-column: 1/-1;
         }
@@ -24,9 +25,25 @@
         border-radius: 6px;
         height: 48px;
         padding: 9px 0 7px;
-        line-height: 200%;
+        line-height: 100%;
         width: 100%;
-        
+        padding-left: 36px;
+    }
+    &__label {
+        position: relative;
+        &::before {
+            content: '+7';
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            transform: translateY(-50%);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: normal;
+            color: #888;
+            display: block;
+            font-family: inherit;
+        }
     }
     
 }
@@ -88,4 +105,5 @@
             
         }
     }
+    
 }

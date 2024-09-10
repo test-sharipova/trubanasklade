@@ -1,0 +1,11 @@
+.contacts {
+    &__text {
+        margin: 24px 0 48px;
+        max-width: 725px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        gap: 76px;
+    }
+}
