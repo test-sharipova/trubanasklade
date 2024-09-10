@@ -1,0 +1,110 @@
+.video {
+    background: linear-gradient(180deg, #ecedf1 0%, #d8dce2 100%);
+    padding: 60px 0 32px;
+    &__slider {
+        margin-top: 36px;
+        .slick {
+            &-slide {
+                margin: 0 10px;
+              }
+              
+              &-list {
+                margin-left: -10px;
+                margin-right: -10px;
+              }
+        }
+        .slick-arrow {
+            font-size: 1px;
+            color: transparent;
+            border: none;
+            border-radius: 100%;
+            width: 48px;
+            height: 48px;
+            background-color: #e84039;
+            cursor: pointer;
+            position: absolute;
+            top: -60px;
+            right: 0;
+            z-index: 2;
+            transition: background-color .3s;
+            &::after {
+                content: '';
+                mask: url(../img/icons/arrow-right.svg) no-repeat center/contain;
+                display: block;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 11px;
+                height: 20px;
+                transition: background-color .3s;
+            }
+            &:hover {
+                background-color: #fff;
+                &::after {
+                    background-color: #e84039;
+                }
+            }
+            
+        }
+        .slick-prev {
+            right: 60px;
+            &::after {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+        }
+        .slick-disabled {
+            background-color: transparent;
+            border: 1px solid #999faa;
+            &::after {
+                background-color: #999faa;
+            }
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #999faa;
+                &::after {
+                    background-color: #999faa;
+                }
+            }
+        }
+    }
+    &__text {
+        margin: 20px 0 0;
+        font-size: 18px;
+        line-height: 144%;
+    }
+    &__link {
+        position: relative;
+        display: block;
+        
+        img {
+            width: 100%;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0, .4);
+            border-radius: 5px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 44px;
+            height: 31px;
+            display: block;
+            background: url(../img/icons/play-youtube.svg) no-repeat center/contain;
+        }
+    }
+}

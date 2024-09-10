@@ -49,3 +49,11 @@ if ($slider.length) {
 
   $slider.slick();
 }
+
+//слайдер с видео
+$('.video__slider').slick({
+  infinite: false,
+  slidesToShow: 2,
+  slidesToScroll: 1
+
+});
