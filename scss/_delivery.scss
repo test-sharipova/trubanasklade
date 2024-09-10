@@ -1,0 +1,36 @@
+.delivery {
+    padding: 40px 0 36px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        margin-top: 48px;
+        gap: 52px 37px;
+    }
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+    &__map {
+        margin-top: 77px;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 144%;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 40px;
+            &::before {
+                content: '';
+                display: block;
+                width: 13px;
+                height: 18px;
+                background: url(../img/icons/flag.svg) no-repeat center/contain;
+            }
+        }
+    }
+}

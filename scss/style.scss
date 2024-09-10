@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "DIN Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("DIN Pro"),
+        url("/fonts/dinpro.woff2") format("woff2"),
+        url("/fonts/dinpro.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DIN Pro";
+    font-style: medium;
+    font-weight: 500;
+    src: local("DIN Pro"),
+        url("/fonts/dinpro_medium.woff2") format("woff2"),
+        url("/fonts/dinpro_medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DIN Pro";
+    font-style: bold;
+    font-weight: 700;
+    src: local("DIN Pro"),
+        url("/fonts/dinpro_bold.woff2") format("woff2"),
+        url("/fonts/dinpro_bold.woff") format("woff");
+}
+
+body {
+    font-family: "DIN Pro", ui-sans-serif, system-ui, sans-serif;
+    color: #333;
+    background-color: #f1f4f7;
+    margin: 0;
+}
+.logo {
+    img {
+        max-width: 100%;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    opacity: 0;
+    clip: rect(0,0,0,0);
+    color: transparent;
+    font-size: 1px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1240px
+}
+
+.breadcrumbs {
+    padding: 14px 0;
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 6px;
+    }
+    &__item {
+        
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            color: #999faa;
+            text-decoration: none;
+        }
+        &::after {
+            content: '–';
+        }
+        &:last-child {
+            a {
+                color: #333;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+//font-size
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: normal;
+    margin: 0;
+}
+.fs_16 {
+    font-size: 16px;
+    margin: 0;
+}
+.fs_18 {
+    font-size: 18px;
+    margin: 0;
+}
+.fs_20 {
+    font-size: 20px;
+    margin: 0;
+}
+.fs_28 {
+    font-size: 28px;
+    margin: 0;
+}
+.fs_24 {
+    font-size: 24px;
+    margin: 0;
+}
+.fs_32 {
+    font-size: 32px;
+    margin: 0;
+}
+.fs_40 {
+    font-size: 40px;
+    margin: 0;
+}
+
+//font-weight
+.fw_500 {
+    font-weight: 500;
+}
+.fw_700 {
+    font-weight: 700;
+}
+
+//line-height
+.lh_norm {
+    line-height: normal;
+}
+.lh_144 {
+    line-height: 144%;
+}
+.lh_200 {
+    line-height: 200%;
+}
+
+//margins 
+.mb_9 {
+    margin-bottom: 9px;
+}
+.mb_12 {
+    margin-bottom: 12px;
+}
+.mb_16 {
+    margin-bottom: 16px;
+}
+.mb_20 {
+    margin-bottom: 20px;
+}
+.mb_32 {
+    margin-bottom: 32px;
+}
+
+//btn
+.btn_main {
+    border-radius: 6px;
+    background-color: #029fd2;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    height: 48px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .3s;
+    &:hover {
+        background-color: #02afe7;
+    }
+}
+
+
+
+@import '_header.scss';
+@import '_promo.scss';
+@import '_form.scss';
+@import '_services.scss';
+@import '_work.scss';
+@import '_laser.scss';
+@import '_steps.scss';
+@import '_delivery.scss';
+@import '_about.scss';

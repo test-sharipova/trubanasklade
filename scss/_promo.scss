@@ -1,0 +1,47 @@
+.promo {
+    color: #fff;
+    
+    
+    &__wrapper {
+        border-radius: 5px;
+        padding: 70px 0 82px;
+        background-image: image-set(
+            url("../img/promo-bg.webp") type("image/webp"),
+            
+            url("../img/promo-bg.jpg") type("image/jpg") 1x,
+            url("../img/promo-bg-2x.jpg") type("image/jpg") 2x
+            );
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: cover;
+        background-color: #001650;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 0 0 32px;
+    }
+    &__content {
+        max-width: 605px;
+        margin-left: 80px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 200%;
+        margin: 0;
+        padding: 0;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            &::before {
+                content: '';
+                display: block;
+                width: 23px;
+                height: 17px;
+                background: url(/img/icons/red-check.svg) no-repeat center/contain;
+            }
+        }
+    }
+}

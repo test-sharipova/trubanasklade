@@ -1,0 +1,45 @@
+.services {
+    padding: 30px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 24px;
+        gap: 20px;
+    }
+    &__item {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #fff;
+        border-radius: 5px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        text-wrap: balance;
+        .fs_28 {
+            text-transform: uppercase;
+        }
+    }
+    &__list {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 144%;
+        flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-bottom: 22px;
+        &__item {
+            margin-bottom: 9px;
+            display: flex;
+            gap: 12px;
+            &::before {
+                content: '';
+                width: 16px;
+                height: 12px;
+                display: block;
+                background: url(../img/icons/red-check.svg) no-repeat center/contain;
+                margin-top: 8px;
+            }
+
+        }
+    }
+}

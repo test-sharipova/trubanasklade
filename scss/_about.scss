@@ -1,0 +1,136 @@
+.about {
+    padding: 50px 0 80px;
+    &__wrap {
+        background-color: #fff;
+        padding: 60px 60px 48px;
+        border-radius: 5px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin: 0 0 24px;
+        text-wrap: balance;
+        span {
+            color: #e84039;
+        }
+    }
+    .fs_20 {
+        max-width: 725px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 48px;
+    }
+    &__item {
+        padding: 0 50px 0 70px;
+        position: relative;
+        &:first-child {
+            padding-left: 0;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: 94px;
+            background-color: #e1e1e1;
+            right: 0;
+            top: 14px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        &__title {
+            margin: 0 0 12px;
+            font-weight: 700;
+            font-size: 40px;
+            color: #f24841;
+        }
+        &__text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 144%;
+            text-wrap: balance;
+            margin: 0;
+        }
+    }
+    &__slider {
+        .slick-arrow {
+            font-size: 1px;
+            color: transparent;
+            border: none;
+            border-radius: 100%;
+            width: 48px;
+            height: 48px;
+            background-color: #e84039;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            transition: background-color .3s;
+            &::after {
+                content: '';
+                mask: url(../img/icons/arrow-right.svg) no-repeat center/contain;
+                display: block;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 11px;
+                height: 20px;
+                transition: background-color .3s;
+            }
+            &:hover {
+                background-color: #fff;
+                &::after {
+                    background-color: #e84039;
+                }
+            }
+
+        }
+        .slick-next {
+            right: 32px;
+
+        }
+        .slick-prev {
+            left: 32px;
+            &::after {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+        }
+    }
+    &__slider {
+        background-color: #fff;
+        &__counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            font-size: 18px;
+            line-height: 144%;
+            color: rgba(51, 51, 51, .6);
+            padding: 13px 0 15px;
+            background-color: #fff;
+            &::before {
+                content: 'Фотографии производства и склада';
+                font-size: 18px;
+                line-height: 144%;
+                color: #333;
+            }
+        }
+    }
+    &__slide {
+        height: 534px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
