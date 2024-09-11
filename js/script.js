@@ -91,3 +91,110 @@ let maskOptions = {
 for (let i = 0; i < element.length; i++) {
     let mask = IMask(element[i], maskOptions);
 }
+
+//табы в контактах
+$(function() {
+  
+  $('ul.contacts__tabs__caption').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.contacts__tabs').find('div.contacts__tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  });
+  
+});
+
+//карты в контактах - главный офис
+// ymaps.ready(function () {
+//   var myMap = new ymaps.Map('map', {
+//           center: [55.159812, 61.399066],
+//           zoom: 15
+//       }, {
+//           searchControlProvider: 'yandex#search'
+//       }),
+
+//       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+//           hintContent: 'пр. Ленина, 55А, оф. 1001',
+//           balloonContent: ''
+//       }, {
+//           // Опции.
+//           // Необходимо указать данный тип макета.
+//           iconLayout: 'default#image',
+//           // Своё изображение иконки метки.
+//           iconImageHref: '../img/icons/marker.png',
+//           // Размеры метки.
+//           iconImageSize: [40, 44],
+//           // Смещение левого верхнего угла иконки относительно
+//           // её "ножки" (точки привязки).
+//           iconImageOffset: [-5, -38]
+//       });
+
+     
+
+//   myMap.geoObjects
+//       .add(myPlacemark);
+      
+// });
+
+//карты в контактах - Производство и склад
+// ymaps.ready(function () {
+//   var myMap = new ymaps.Map('map2', {
+//           center: [55.199974, 61.378290],
+//           zoom: 15
+//       }, {
+//           searchControlProvider: 'yandex#search'
+//       }),
+
+//       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+//           hintContent: 'пр. Ленина, 55А, оф. 1001',
+//           balloonContent: ''
+//       }, {
+//           // Опции.
+//           // Необходимо указать данный тип макета.
+//           iconLayout: 'default#image',
+//           // Своё изображение иконки метки.
+//           iconImageHref: '../img/icons/marker.png',
+//           // Размеры метки.
+//           iconImageSize: [40, 44],
+//           // Смещение левого верхнего угла иконки относительно
+//           // её "ножки" (точки привязки).
+//           iconImageOffset: [-5, -38]
+//       });
+
+     
+
+//   myMap.geoObjects
+//       .add(myPlacemark);
+      
+// });
+
+//карты в контактах - Филиал в Москве
+// ymaps.ready(function () {
+//   var myMap = new ymaps.Map('map3', {
+//           center: [55.159812, 61.399066],
+//           zoom: 15
+//       }, {
+//           searchControlProvider: 'yandex#search'
+//       }),
+
+//       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+//           hintContent: 'пр. Ленина, 55А, оф. 1001',
+//           balloonContent: ''
+//       }, {
+//           // Опции.
+//           // Необходимо указать данный тип макета.
+//           iconLayout: 'default#image',
+//           // Своё изображение иконки метки.
+//           iconImageHref: '../img/icons/marker.png',
+//           // Размеры метки.
+//           iconImageSize: [40, 44],
+//           // Смещение левого верхнего угла иконки относительно
+//           // её "ножки" (точки привязки).
+//           iconImageOffset: [-5, -38]
+//       });
+
+     
+
+//   myMap.geoObjects
+//       .add(myPlacemark);
+      
+// });
