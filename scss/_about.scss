@@ -24,7 +24,7 @@
         margin-top: 48px;
     }
     &__item {
-        padding: 0 50px 0 70px;
+        padding: 0 50px 0 25px;
         position: relative;
         &:first-child {
             padding-left: 0;
@@ -40,6 +40,7 @@
             top: 14px;
         }
         &:last-child {
+            padding-left: 50px;
             &::after {
                 display: none;
             }
@@ -69,7 +70,7 @@
             background-color: #e84039;
             cursor: pointer;
             position: absolute;
-            top: 50%;
+            top: 54%;
             transform: translateY(-50%);
             z-index: 2;
             transition: background-color .3s;

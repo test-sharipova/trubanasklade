@@ -1,8 +1,12 @@
 .video {
     background: linear-gradient(180deg, #ecedf1 0%, #d8dce2 100%);
     padding: 60px 0 32px;
+    &__container {
+        padding: 0 48px;
+    }
     &__slider {
         margin-top: 36px;
+        
         .slick {
             &-slide {
                 margin: 0 10px;
@@ -23,7 +27,7 @@
             background-color: #e84039;
             cursor: pointer;
             position: absolute;
-            top: -60px;
+            top: -72px;
             right: 0;
             z-index: 2;
             transition: background-color .3s;

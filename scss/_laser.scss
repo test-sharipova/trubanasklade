@@ -12,25 +12,30 @@
        
         &__content {
             max-width: 461px;
+            .fs_40, .fs_20 {
+                text-transform: uppercase;
+            }
         }
         
     }
     &__img {
         max-width: 715px;
-        padding: 32px 29px;
+        padding: 44px 29px 33px;
         border-radius: 10px;
         box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.1);
         background-color: #fff;
         background-image: linear-gradient(360deg, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 0.1) 100%);
         background-repeat: no-repeat;
+        flex-grow: 1;
         img {
             max-width: 100%;
             display: block;
         }
         &__text {
+            padding: 14px 20px 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px 37px;
+            gap: 20px 14px;
             .fs_18 {
                 color: rgba(153, 159, 170, 0.98);
             }
