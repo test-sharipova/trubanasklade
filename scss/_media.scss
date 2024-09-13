@@ -188,12 +188,21 @@
     .desktop {
         display: none;
     }
+    .breadcrumbs {
+        padding: 10px 0;
+        &__item {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
     .promo {
         &__content {
             margin-left: 0;
         }
         &__wrapper {
             padding: 32px 32px 42px 24px;
+            background-position: left 50% center;
         }
         &__title {
             font-size: 24px;
@@ -208,7 +217,7 @@
             gap: 16px;
             li {
                 align-items: flex-start;
-                
+                margin-bottom: 3px;
                 &::before {
                     margin-top: 4px;
                     width: 18px;
@@ -220,11 +229,11 @@
     .form {
         padding: 20px 0 20px;
         &__wrapper {
-            padding: 24px 24px 32px;
+            padding: 21px 20px 28px;
         }
         &__form {
             grid-template-columns: 1fr;
-            margin-top: 20px;
+            margin-top: 18px;
             gap: 12px;
             .btn_main {
                 margin-top: 4px;
@@ -248,7 +257,7 @@
         }
     }
     .services {
-        padding: 10px 0 20px;
+        padding: 20px 0 20px;
         &__wrapper {
             grid-template-columns: 1fr;
             margin-top: 20px;
@@ -272,10 +281,13 @@
         &__list {
             font-size: 14px;
             padding-right: 0;
+            line-height: 116%;
+            margin-top: 8px;
             &__item {
-                
+                margin-bottom: 15px;
                 &::before {
                     min-width: 16px;
+                    margin-top: 6px;
                 }
             }
         }
@@ -567,7 +579,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 0;
+            margin-bottom: 12px;
             &::after {
                 content: '';
                 display: block;
@@ -581,6 +593,11 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height .3s;
+            li {
+                &:last-child {
+                    margin-bottom: 38px;
+                }
+            }
             &-serv {
                 columns: 1;
                 display: grid;
