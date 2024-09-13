@@ -217,6 +217,9 @@ body {
     color: #428bca;
     text-decoration: none;
 }
+.mobile {
+    display: none;
+}
 
 
 
@@ -234,3 +237,5 @@ body {
 @import '_cases.scss';
 @import '_contacts.scss';
 @import '_footer.scss';
+
+@import '_media.scss';

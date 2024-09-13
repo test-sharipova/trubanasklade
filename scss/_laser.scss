@@ -30,6 +30,7 @@
         img {
             max-width: 100%;
             display: block;
+            object-fit: contain;
         }
         &__text {
             padding: 14px 20px 0;
