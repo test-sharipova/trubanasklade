@@ -62,7 +62,8 @@ $('.video__slider').slick({
         slidesToShow: 1,
         // centerMode: true,
         arrows: false,
-        padding: 0,
+        // centerPadding: '20px',
+        
       }
     },    
   ]
@@ -81,7 +82,18 @@ $('.rew__slider').slick({
         slidesToShow: 3,
         
       }
-    },    
+    },  
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        // centerMode: true,
+        arrows: false,
+        // centerPadding: '20px',
+        
+      }
+    },     
   ]
 });
 
@@ -120,4 +132,10 @@ $(function() {
       .closest('div.contacts__tabs').find('div.contacts__tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   });
   
+});
+
+$('.footer__title').each(function(i) {
+  $(this).on('click', function() {
+    $('.footer__menu').eq(i).toggleClass('footer__menu_active');
+  });
 });
