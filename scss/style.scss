@@ -7,8 +7,8 @@
     font-style: normal;
     font-weight: 400;
     src: local("DIN Pro"),
-        url("/fonts/dinpro.woff2") format("woff2"),
-        url("/fonts/dinpro.woff") format("woff");
+        url("../fonts/dinpro.woff2") format("woff2"),
+        url("../fonts/dinpro.woff") format("woff");
 }
 
 @font-face {
@@ -16,8 +16,8 @@
     font-style: medium;
     font-weight: 500;
     src: local("DIN Pro"),
-        url("/fonts/dinpro_medium.woff2") format("woff2"),
-        url("/fonts/dinpro_medium.woff") format("woff");
+        url("../fonts/dinpro_medium.woff2") format("woff2"),
+        url("../fonts/dinpro_medium.woff") format("woff");
 }
 
 @font-face {
@@ -25,8 +25,8 @@
     font-style: bold;
     font-weight: 700;
     src: local("DIN Pro"),
-        url("/fonts/dinpro_bold.woff2") format("woff2"),
-        url("/fonts/dinpro_bold.woff") format("woff");
+        url("../fonts/dinpro_bold.woff2") format("woff2"),
+        url("../fonts/dinpro_bold.woff") format("woff");
 }
 
 body {
