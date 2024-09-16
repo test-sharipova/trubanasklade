@@ -24,6 +24,9 @@
     &__content {
         max-width: 605px;
         margin-left: 80px;
+        &_w672 {
+            max-width: 672px;
+        }
     }
     &__subtitle {
         font-weight: 400;
@@ -33,16 +36,17 @@
         padding: 0;
         li {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 11px;
             &::before {
                 content: '';
                 display: block;
+                margin-top: 8px;
                 width: 23px;
                 height: 17px;
                 background: url(../img/icons/red-check.svg) no-repeat center/contain;
             }
         }
-        
+
     }
 }
