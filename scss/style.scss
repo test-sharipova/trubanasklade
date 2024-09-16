@@ -43,6 +43,9 @@ a[x-apple-data-detectors] {
     font-weight: inherit !important;
     line-height: inherit !important;
 }
+button, input, select {
+    font-family: inherit;
+}
 .logo {
     img {
         max-width: 100%;

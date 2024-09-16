@@ -63,6 +63,9 @@
         font-size: 18px;
         line-height: 144%;
         margin: 0 0 32px;
+        br {
+            display: none;
+        }
     }
     &__images {
         display: grid;

@@ -128,15 +128,28 @@
     .delivery {
         &__wrapper {
             gap: 32px;
+            margin-top: 32px;
         }
         &__map {
             margin-top: 34px;
             &__text {
                 margin-top: 35px;
+                font-size: 12px;
+            }
+        }
+        &__item {
+            gap: 16px;
+            .fs_18 {
+                padding-right: 8px;
+                line-height: normal;
+            }
+            &:nth-child(4) {
+                margin-bottom: 7px;
             }
         }
     }
     .about {
+        
         &__wrap {
             padding: 40px 24px 24px;
         }
@@ -230,6 +243,9 @@
         padding: 20px 0 20px;
         &__wrapper {
             padding: 21px 20px 28px;
+            .input-file {
+                justify-content: flex-start;
+            }
         }
         &__form {
             grid-template-columns: 1fr;
@@ -255,6 +271,7 @@
                 line-height: normal;
             }
         }
+       
     }
     .services {
         padding: 20px 0 20px;
@@ -318,12 +335,19 @@
         background-color: transparent;
         .title {
             margin-bottom: 20px;
+            max-width: 98%;
         }
         &__item {
             flex-direction: column;
             margin-bottom: 40px;
+            gap: 20px;
             &:last-of-type {
                 margin-bottom: 20px;
+            }
+            &:nth-child(2), &:nth-child(3) {
+                .laser__img {
+                    padding-bottom: 28px;
+                }
             }
             &__content {
                 order: 2;
@@ -331,6 +355,7 @@
                     font-size: 14px;
                     line-height: normal;
                     margin-bottom: 24px;
+                    max-width: 98%;
                 }
                 .fs_20 {
                     font-size: 16px;
@@ -338,7 +363,7 @@
             }
             .mobile {
                 text-transform: uppercase;
-                margin-bottom: 4px;
+                
             }
         }
         &__img {
@@ -347,25 +372,49 @@
         &__list {
             font-size: 14px;
             margin-top: 12px;
+            line-height: 244%;
+        }
+        &__img {
+            padding-bottom: 32px;
+           
+            img {
+                height: 223px;
+                margin-bottom: 8px;
+            }
+            &__text {
+                .fs_18 {
+                    white-space: nowrap;
+                }
+                .fs_24 {
+                    font-size: 14px;
+                }
+            }
         }
     }
     .steps {
         padding: 20px 0;
         &__item {
             &:first-child {
-                margin-top: 20px;
+                margin-top: 5px;
             }
-            gap: 20px;
+            gap: 16px;
 
         }
         &__title {
-            font-size: 14px;
+            font-size: 16px;
             line-height: normal;
+            margin-bottom: 8px;
         }
         &__text {
             font-size: 14px;
             line-height: normal;
             margin-bottom: 20px;
+            span {
+                white-space: nowrap;
+            }
+            br {
+                display: block;
+            }
         }
     }
     .delivery {
@@ -385,7 +434,7 @@
         }
     }
     .about {
-        padding: 20px 0 40px;
+        padding: 33px 0 40px;
         &__title {
             font-size: 28px;
             margin-bottom: 16px;
@@ -439,6 +488,7 @@
             }
             &__counter {
                 font-size: 12px;
+                line-height: 217%;
                 &::before {
                     font-size: 12px;
                 }
@@ -464,6 +514,9 @@
             font-size: 14px;
             margin-top: 12px;
         }
+        &__link {
+            height: 182px;
+        }
     }
     .rew {
         padding: 40px 0 20px;
@@ -484,6 +537,10 @@
                 margin: 0 4px;
             }
         }
+        &__link {
+            margin-bottom: 12px;
+            height: 216px;
+        }
     }
     .cases {
         padding: 20px 0;
@@ -493,9 +550,10 @@
         &__title {
             padding: 16px 24px;
             font-size: 16px;
+            line-height: 162%;
         }
         &__content {
-            padding: 20px;
+            padding: 20px 20px 13px 20px;
         }
         &__item {
             &__wrapper {
@@ -511,7 +569,8 @@
                     font-size: 14px;
                     display: flex;
                     gap: 8px;
-                    height: 40px;
+                    min-height: 40px;
+                    padding: 10px 4px 10px 12px;
                 }
             }
         }
@@ -554,6 +613,7 @@
         }
     }
     footer {
+        padding-top: 48px;
         .container {
             padding: 0;
         }
