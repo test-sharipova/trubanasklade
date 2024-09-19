@@ -215,6 +215,7 @@
     }
     .header {
         &__wrapper {
+            padding: 10px 0;
             .header {
                 &__phones {
                     position: fixed;
@@ -236,7 +237,7 @@
                         }
                     }
                     .btn_main {
-                        margin: 32px 22px;
+                        margin: 8px 22px 32px;
                         height: 40px;
                     }
                     span {
@@ -296,7 +297,7 @@
                     align-items: center;
                     .logo {
                         width: 148px;
-                        margin-right: 55px;
+                        margin-right: 32px;
                         img {
                             max-width: 100%;
                             display: block;
@@ -312,6 +313,7 @@
                 }
                 .btn_main {
                     margin: 0 22px 16px;
+                    height: 40px;
                 }
             }
         }
@@ -325,7 +327,7 @@
             text-transform: uppercase;
             color: #333;
             border-bottom: 1px solid rgba(51, 51, 51, .1);
-            padding: 16px 22px;
+            padding: 15px 22px;
             justify-content: space-between;
             &::after {
                 content: '';
@@ -351,6 +353,7 @@
         background-color: #fff;
         color: #e84039;
         border-bottom: 1px solid rgba(51, 51, 51, .1);
+        padding: 15px 24px;
         &::before {
             background-color: #e84039;
         }
@@ -383,6 +386,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
+            line-height: 125%;
             li {
                 align-items: flex-start;
                 margin-bottom: 3px;
@@ -818,6 +822,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 8px;
+                margin-right: 0;
                 li {
                     text-overflow: ellipsis;
                     overflow: hidden;
