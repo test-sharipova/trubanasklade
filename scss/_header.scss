@@ -35,7 +35,99 @@ header {
             justify-content: space-between;
         }
     }
-  
+    &__catalog {
+        position: relative;
+        &__btn {
+            height: 48px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 143%;
+            color: #cad5e8;
+            background-color: #22325c;
+            border: none;
+            text-decoration: none;
+            padding: 6px 20px;
+            &::after {
+                content: '';
+                width: 14px;
+                height: 7px;
+                background-color: #CAD5E8;
+                mask: url(../img/icons/arrow-down.svg) no-repeat center/contain;
+            }
+        }
+        &__list {
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            height: 0;
+            top: 48px;
+            left: 0;
+            padding-bottom: 200px;
+            z-index: 10;
+            opacity: 0;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            transition: height .3s;
+            &_active {
+                height: 100vh;
+                overflow-y: auto;
+                opacity: 1;
+            }
+            &__title {
+                margin: 0;
+                padding: 14px 22px;
+                font-weight: 500;
+                font-size: 19px;
+                line-height: 147%;
+                color: #000;
+            }
+            
+            &__list {
+                list-style-type: none;
+                padding: 0;
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: #333;
+                    border-bottom: 1px solid rgba(51, 51, 51, .1);
+                    padding: 16px 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    &::after {
+                        content: '';
+                        height: 14px;
+                        width: 7px;
+                        background-color: #000; 
+                        display: block;
+                        mask: url(../img/icons/arrow-right.svg) no-repeat center/contain;
+                    }
+
+                }
+                .header__catalog__list__sublist {
+                    list-style-type: none;
+                    padding: 0 0 0 20px;
+                    opacity: 0;
+                    overflow: hidden;
+                    max-height: 0px;
+                    transition: max-height .3s;
+                    a {
+                        font-size: 13px;
+                    }
+                    &_active {
+                        opacity: 1;
+                        max-height: 500px;
+                        overflow: visible;
+                    }
+                }
+            }
+        }
+    }
 }
 .menu {
     display: flex;
@@ -69,7 +161,7 @@ header {
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    transition: opacity .3s;
+    transition: color .3s;
     font-weight: 500;
     font-size: 14px;
     line-height: 143%;
@@ -79,10 +171,15 @@ header {
         width: 16px;
         height: 16px;
         display: block;
-        background: url(../img/icons/download.svg) no-repeat center/contain;
+        background-color: #428BCA;
+        mask: url(../img/icons/download.svg) no-repeat center/contain;
+        transition: background-color .3s;
     }
     &:hover {
-        opacity: .75;
+        color: #e84039;
+        &::before {
+            background-color: #e84039;
+        }
     }
 }
 .email {
@@ -93,6 +190,10 @@ header {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #000;
+    transition: color .3s;
+    &:hover {
+        color: #428bca;
+    }
 }
 .soc {
     display: flex;
@@ -134,6 +235,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    transition: background-color .3s;
     &::before {
         content: '';
         display: block;
@@ -141,6 +243,13 @@ header {
         height: 8px;
         border-radius: 100%;
         background-color: #fff;
-
+        transition: background-color .3s;
+    }
+    &:hover {
+        background-color: #fff;
+        color: #e84039;
+        &::before {
+            background-color: #e84039;
+        }
     }
 }

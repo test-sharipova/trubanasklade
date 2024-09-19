@@ -65,6 +65,10 @@
     width: 100%;
     cursor: pointer;
     padding: 0 16px;
+    &:hover {
+        border-color: #029fd2;
+        color: #029fd2;
+    }
     p {
         margin: 0;
         font-weight: 500;

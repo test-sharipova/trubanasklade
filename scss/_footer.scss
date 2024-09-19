@@ -29,9 +29,9 @@ footer {
                 font-size: 16px;
                 line-height: 200%;
                 color: #a9acb9;
-                transition: opacity .3s;
+                transition: color .3s;
                 &:hover {
-                    opacity: .75;
+                    color: #029fd2;
                 }
             }
         }
@@ -92,6 +92,10 @@ footer {
                 color: #a9acb9;
                 line-height: normal;
                 text-decoration: none;
+                transition: color .3s;
+                &:hover {
+                    color: #fff;
+                }
             }
         }
         &__wrapper {
@@ -109,6 +113,9 @@ footer {
                     }
                     &_youtube {
                         mask: url(../img/icons/youtube.svg) no-repeat center/contain;
+                    }
+                    &:hover {
+                        background: #029fd2;
                     }
                 }
             }

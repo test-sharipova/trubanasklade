@@ -25,12 +25,13 @@
     <header>
         <div class="container">
             <div class="header__wrapper">
+                <button type="button" class="mobile hamburger"></button>
                 <a href="#" class="logo">
                     <img src="img/logo.svg" alt="логотип труба на складе" width="185" height="40">
                 </a>
-                <a href="#" download class="download">НАЛИЧИЕ ТРУБ на 28.08.2024</a>
-                <a href="mailto:zakaz@trubanasklade.ru" class="email">zakaz@trubanasklade.ru</a>
-                <div class="soc">
+                <a href="#" download class="download desktop">НАЛИЧИЕ ТРУБ на 28.08.2024</a>
+                <a href="mailto:zakaz@trubanasklade.ru" class="email desktop">zakaz@trubanasklade.ru</a>
+                <div class="soc desktop">
                     <a href="#" class="soc__item soc__item_vk">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
@@ -42,15 +43,27 @@
                     </a>
                 </div>
                 <div class="header__phones">
+                    <div class="mobile header__menu__wrapper__head">
+                        <a href="#" class="logo"><img src="img/logo.svg" alt="логотип труба на складе"></a>
+                        <button type="button" class="phones__close"></button>
+                        
+                    </div>
+                    <span class="mobile">Москва</span>
                     <a href="tel:+74991101532" class="header__phone">+7 499 110-15-32</a>
+                    <span class="mobile">Челябинск</span>
                     <a href="tel:+73517995654" class="header__phone">+7 351 799-56-54</a>
+                    <button type="button" class="btn_main mobile">Сделать заказ</button>
                 </div>
+                <button type="button" class="mobile header__phones__icon"></button>
             </div>
-            
         </div>
         <div class="header__menu__wrap">
             <div class="container">
                 <div class="header__menu__wrapper">
+                    <div class="mobile header__menu__wrapper__head">
+                        <button type="button" class="menu__close"></button>
+                        <a href="#" class="logo"><img src="img/logo.svg" alt="логотип труба на складе"></a>
+                    </div>
                     <ul class="menu">
                         <li class="menu__item"><a href="#" class="menu__link">ПРОДУКЦИЯ</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">УСЛУГИ</a></li>
@@ -61,6 +74,48 @@
                         <li class="menu__item"><a href="#" class="menu__link">КОНТАКТЫ</a></li>
                     </ul>
                     <a href="#" class="live">LIVE</a>
+                    <a href="#" download class="download mobile">НАЛИЧИЕ ТРУБ на 28.08.2024</a>
+                    <button type="button" class="btn_main mobile">Сделать заказ</button>
+                </div>
+            </div>
+        </div>
+        <div class="header__catalog mobile">
+            <button type="button" class="header__catalog__btn">КАТАЛОГ ТРУБ</button>
+            <div class="header__catalog__list">
+                <div class="header__catalog__list__item">
+                    <p class="header__catalog__list__title">
+                        Каталог трубного проката
+                    </p>
+                    <ul class="header__catalog__list__list">
+                        <li>
+                            <a class="header__catalog-show">Трубы бесшовные</a>
+                            <ul class="header__catalog__list__sublist">
+                                <li><a href="">Трубы по ГОСТ</a></li>
+                                <li><a href="">Трубы по диаметру</a></li>
+                                <li><a href="">Трубы по маркам стали</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Котельные</a></li>
+                        <li><a href="">Толстостенные</a></li>
+                        <li><a href="">Горячедеформированные</a></li>
+                        <li><a href="">Трубы в ВУС изоляции</a></li>
+                        <li><a href="">Холоднодеформированные</a></li>
+                        <li><a href="">Электросварные</a></li>
+                    </ul>
+                </div>
+                <div class="header__catalog__list__item"></div>
+                    <p class="header__catalog__list__title">
+                        Каталог деталей трубопровода 
+                    </p>
+                    <ul class="header__catalog__list__list">
+                        
+                        <li><a href="">Отводы</a></li>
+                        <li><a href="">Тройники</a></li>
+                        <li><a href="">Переходы</a></li>
+                        <li><a href="">Заглушки</a></li>
+                        <li><a href="">Опоры</a></li>
+                        
+                    </ul>
                 </div>
             </div>
         </div>
@@ -1151,5 +1206,7 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay"></div>
 </body>
 </html>

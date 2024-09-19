@@ -1,3 +1,61 @@
+//menu 
+const menu = document.querySelector('.header__menu__wrapper'),
+    menuItem = document.querySelectorAll('.menu__item'),
+    hamburger = document.querySelector('.hamburger'),
+    menuClose = document.querySelector('.menu__close'),
+    overlay = document.querySelector('.overlay'),
+    phones = document.querySelector('.header__phones__icon'),
+    phonesContent = document.querySelector('.header__phones'),
+    phonesClose = document.querySelector('.phones__close'),
+    body = document.querySelector('body');
+
+    hamburger.addEventListener('click', () => {
+      overlay.style.display = 'block';
+      menu.classList.add('header__menu__wrapper_active');
+      body.classList.add('body-fixed');
+    });
+    menuClose.addEventListener('click', () => {
+      menu.classList.remove('header__menu__wrapper_active');
+      overlay.style.display = 'none';
+      body.classList.remove('body-fixed');
+  });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+          overlay.style.display = 'none';
+            menu.classList.toggle('header__menu__wrapper_active');
+            body.classList.remove('body-fixed');
+        });
+    });
+
+//показать-скрыть телефоны моб версия
+    phones.addEventListener('click', () => {
+      overlay.style.display = 'block';
+      phonesContent.classList.add('header__phones_active');
+      body.classList.add('body-fixed');
+    });
+
+    phonesClose.addEventListener('click', () => {
+      phonesContent.classList.remove('header__phones_active');
+      overlay.style.display = 'none';
+      body.classList.remove('body-fixed');
+    });
+
+
+//каталог труб
+//показать каталог труб
+$('.header__catalog__btn').on('click', function(){
+  $('.header__catalog__list').toggleClass('header__catalog__list_active');
+  $('body').toggleClass('body-fixed');
+});
+
+//показать субкаталог
+$('.header__catalog-show').on('click', function(){
+  $('.header__catalog__list__sublist').toggleClass('header__catalog__list__sublist_active');
+  
+});
+
+
 //прикрепить чертеж
 var dt = new DataTransfer();
 

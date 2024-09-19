@@ -35,6 +35,12 @@ body {
     background-color: #f1f4f7;
     margin: 0;
 }
+.body-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 a[x-apple-data-detectors] {
     color: inherit !important;
     text-decoration: none !important;
@@ -218,19 +224,28 @@ button, input, select {
     background-color: transparent;
     cursor: pointer;
     text-decoration: none;
-    transition: opacity .3s;
+    transition: color .3s, border-color .3s;
     border-radius: 6px;
     &:hover {
-        opacity: .75;
+        border-color: #029fd2;
+        color: #029fd2;
     }
 }
 .link {
     color: #428bca;
     text-decoration: none;
 }
-.mobile {
+.overlay {
+    background: #000;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: none;
 }
+
 
 
 
@@ -248,5 +263,7 @@ button, input, select {
 @import '_cases.scss';
 @import '_contacts.scss';
 @import '_footer.scss';
-
+.mobile {
+    display: none;
+}
 @import '_media.scss';
