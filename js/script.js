@@ -48,6 +48,9 @@ $('.header__catalog__btn').on('click', function(){
   $('.header__catalog__list').toggleClass('header__catalog__list_active');
   $('body').toggleClass('body-fixed');
 });
+$('.hamburger, .header__phones__icon').on('click', function() {
+  $('.header__catalog__list').removeClass('header__catalog__list_active');
+});
 
 //показать субкаталог
 $('.header__catalog-show').on('click', function(){
